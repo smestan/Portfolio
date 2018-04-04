@@ -124,8 +124,9 @@ html, body{
 #main-logo{
     display: block;
     float: left;
-    background: url("../img/logo.gif") no-repeat;
-    width: 131px;
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: cover;
+    width: 200px;
     height: 35px;
 }
 #main-menu{
@@ -252,6 +253,27 @@ html, body{
 }
 .grid-sizer{
     width: 33.33%;
+}
+
+/* Footer */
+#main-footer{
+    box-sizing: border-box;
+    height: 300px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .15);
+
+    
+}
+#logo-footer{
+    padding-top: 64px;
+}
+#main-footer a{
+    display: block;
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 200px;
+    height: 35px;
+
 }
 
 

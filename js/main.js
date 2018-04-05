@@ -14,7 +14,6 @@ $(document).ready(function () {
         updateHeaderPlaceholder();
     });
 
-
     //isitope jquery plugin
 
     var $projects = $('.projects');
@@ -34,6 +33,7 @@ $(document).ready(function () {
         }
         $projects.isotope({ filter: '.' + filterType});
 
+    //Slider
 
     });
     $(".center").slick({
@@ -43,5 +43,9 @@ $(document).ready(function () {
         slidesToShow: 5,
         slidesToScroll: 3
       });
+
+
+      
+      
 
 });

@@ -22,30 +22,63 @@ $(document).ready(function () {
         percentPosition: true,
         masonry: {
             columnWidth: '.grid-sizer'
-    }
+        }
     });
     $('.projects-filter ul li a').click(function (e) {
         e.preventDefault();
         var filterType = $(this).data('filter');
-        if(filterType === 'all'){
-            $projects.isotope({ filter: '*'});
+        if (filterType === 'all') {
+            $projects.isotope({
+                filter: '*'
+            });
             return false;
         }
-        $projects.isotope({ filter: '.' + filterType});
+        $projects.isotope({
+            filter: '.' + filterType
+        });
 
-    //Slider
+        //Slider
 
     });
     $(".center").slick({
-        dots: true,
         infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
         centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3
-      });
+        autoplaySpeed: 2000,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            
+            
 
 
-      
-      
+        ]
+
+    });
+
+
+
+
 
 });

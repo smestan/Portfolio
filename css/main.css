@@ -97,18 +97,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body{
+html,
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.csw{
+
+.csw {
     width: 71.25%;
     margin: 0 auto;
 }
 
-
 /* MAIN HEADER */
-#main-header{
+
+#main-header {
     background: #fff;
     height: 90px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
@@ -121,7 +123,7 @@ html, body{
     box-sizing: border-box;
 }
 
-#main-logo{
+#main-logo {
     display: block;
     float: left;
     background: url("../img/logo.png") no-repeat center center;
@@ -129,26 +131,28 @@ html, body{
     width: 200px;
     height: 35px;
 }
-#main-menu{
-    float: right;
 
+#main-menu {
+    float: right;
 }
-#main-menu ul{
+
+#main-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#main-menu ul li{
+#main-menu ul li {
     float: left;
 }
 
-#main-menu ul:after{
+#main-menu ul:after {
     display: block;
     content: '';
     clear: both;
 }
-#main-menu ul li a{
+
+#main-menu ul li a {
     display: block;
     text-decoration: none;
     color: #777;
@@ -156,61 +160,73 @@ html, body{
     font-weight: bold;
     padding: 10px 22px;
 }
-#main-menu ul li a:hover{
-    color: #000;
-}
-#main-menu ul li.selected a{
+
+#main-menu ul li a:hover {
     color: #000;
 }
 
-#main-menu-toggle{
+#main-menu ul li.selected a {
+    color: #000;
+}
+
+#main-menu-toggle {
     display: none;
     font-size: 26px;
     color: #333;
     float: right;
-
 }
-#header-placeholder{
+
+#header-placeholder {
     height: 90px;
 }
 
 /* Slider */
-#slider{
-    height: 350px;
-    width: 98%;
-    margin: 0 auto;
+
+#slider {
+    height: auto;
+    overflow: hidden;
     background: #f2f2f2;
 }
 
+
+.slider-photo {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+}
+
 /* Main page body */
-.page-body{
+
+.page-body {
     padding-top: 70px;
 }
 
-.projects-filter{
+.projects-filter {
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     text-align: center;
     padding-top: 5px;
     margin-bottom: 30px;
-
 }
-.projects-filter ul{
+
+.projects-filter ul {
     display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.projects-filter ul li{
+
+.projects-filter ul li {
     float: left;
 }
-.projects-filter ul:after{
+
+.projects-filter ul:after {
     content: '';
     display: block;
     clear: both;
-
 }
-.projects-filter ul li a{
+
+.projects-filter ul li a {
     display: block;
     text-decoration: none;
     color: #777;
@@ -219,6 +235,7 @@ html, body{
     padding: 10px 22px;
     transition: all .2s ease-out;
 }
+
 .projects-filter ul li a:hover {
     color: #000;
     transform: translateY(-2px);
@@ -234,40 +251,46 @@ html, body{
     float: right;
     margin-top: 5px;
 }
-.projects-filter ul li:last-child:before{
+
+.projects-filter ul li:last-child:before {
     display: none;
 }
 
-
 /* Projects list */
-.project-item{
+
+.project-item {
     float: left;
     width: 32%;
     margin-bottom: 2%;
-
 }
-.project-item a{
+
+.project-item a {
     display: block;
 }
-.project-item a img{
+
+.project-item a img {
     display: block;
     width: 100%;
 }
-.grid-sizer{
+
+.grid-sizer {
     width: 33.33%;
 }
 
 /* Footer */
-#main-footer{
+
+#main-footer {
     box-sizing: border-box;
     height: 300px;
+    box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, .15);
 
-    
 }
-#logo-footer{
+
+#logo-footer {
     padding: 64px 0 44px;
 }
-#logo-footer a{
+
+#logo-footer a {
     display: block;
     background: url("../img/logo.png") no-repeat center center;
     background-size: cover;
@@ -275,41 +298,38 @@ html, body{
     width: 200px;
     height: 35px;
 }
-#social-footer{
+
+#social-footer {
     text-align: center;
     font-size: 14px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    
 }
-#social-footer a{
+
+#social-footer a {
     text-decoration: none;
     color: #777;
 }
-.social-icons{
+
+.social-icons {
     padding: 25px;
 }
-#bottom-footer{
+
+#bottom-footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     color: #9c9c9c;
 }
-#bottom-footer a{
+
+#bottom-footer a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     color: #000;
     opacity: 0.8;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -343,7 +363,8 @@ html, body{
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -387,8 +408,10 @@ html, body{
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -400,67 +423,72 @@ html, body{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (max-width: 980px) {
-    .csw{
+    .csw {
         width: auto;
         padding: 0 10px;
     }
+    .page-body {
+        padding: 0;
+    }
+    
 }
+
 @media only screen and (max-width: 760px) {
-    #main-header{
+    #main-header {
         height: auto;
         padding-top: 10px;
-
     }
-    #main-logo{
+    .page-body {
+        padding: 0;
+    }
+    #main-logo {
         float: none;
         margin: 0 auto 10px;
     }
-    #main-menu{
+    #main-menu {
         float: none;
         text-align: center;
     }
-    #main-menu ul{
+    #main-menu ul {
         display: inline-block;
     }
-    #main-menu ul li a{
+    #main-menu ul li a {
         padding: 10px 12px;
     }
 }
-@media only screen and (max-width: 500px){
-    #main-menu{
+
+@media only screen and (max-width: 500px) {
+    #main-menu {
         display: none;
     }
-    #main-menu ul li{
+    #main-menu ul li {
         float: none;
     }
-    #main-menu-toggle{
+    #main-menu-toggle {
         display: block;
     }
-}
-@media only screen and (min-width: 500px){
-    #main-menu{
-        display: block !important;
-
+    .projects-filter ul {
+        text-align: center;
+    }
+    .projects-filter ul li {
+        float: none;
+        display: inline-block;
+    }
+    .projects-filter ul li a {
+        padding: 10px;
+    }
+    .page-body {
+        padding: 0;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 500px) {
+    #main-menu {
+        display: block !important;
+    }
+}
 
 /* ==========================================================================
    Print styles.
@@ -473,35 +501,30 @@ html, body{
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -510,28 +533,23 @@ html, body{
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
